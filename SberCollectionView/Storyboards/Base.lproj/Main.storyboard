@@ -15,8 +15,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добрый день, Михаил " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOy-1p-e6j">
+                                <rect key="frame" x="16" y="89" width="361" height="29"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ukm-BU-plo">
-                                <rect key="frame" x="0.0" y="99" width="393" height="155"/>
+                                <rect key="frame" x="0.0" y="126" width="393" height="155"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="155" id="ncS-JM-4ZU"/>
@@ -33,9 +39,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.090196078431372548" green="0.51764705882352935" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="ukm-BU-plo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="OgI-8T-fsE"/>
+                            <constraint firstItem="ukm-BU-plo" firstAttribute="top" secondItem="lOy-1p-e6j" secondAttribute="bottom" constant="8" id="91p-jK-KPQ"/>
+                            <constraint firstItem="lOy-1p-e6j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="J5f-hi-UWb"/>
                             <constraint firstItem="ukm-BU-plo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bKj-z9-UdH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ukm-BU-plo" secondAttribute="trailing" id="i8A-we-eSW"/>
+                            <constraint firstItem="lOy-1p-e6j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="lPh-7b-DyE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lOy-1p-e6j" secondAttribute="trailing" constant="16" id="qaV-aR-g0K"/>
                         </constraints>
                     </view>
                     <connections>
